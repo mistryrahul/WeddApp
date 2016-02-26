@@ -1,0 +1,149 @@
+
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFE57373"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mnscrn">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wed_chsr"
+    android:layout_width="match_parent"
+    android:layout_height="282dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/img_grp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginTop="50dp"
+            android:layout_width="162dp"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/custom_imgvu_wed_menu"
+            android:minHeight="80dp"
+            android:minWidth="100dp"
+            android:layout_weight="0.15" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/tvgrp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/tvbride"
+            android:text="BRIDE NAME"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tvgroom"
+            />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp"
+            android:src="@drawable/wed_sign"
+            android:layout_gravity="center"
+            android:id="@+id/imageView2"
+            android:layout_below="@+id/tvbride"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvgroom"
+            android:text="GROOM NAME"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_layout">
+
+    </TableLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:textSize="22dp"
+        android:textStyle="bold|italic"
+        android:layout_height="wrap_content"
+        android:text="Are you Attending"
+        android:background="@null"
+        android:layout_above="@+id/radio_rsvp"
+        android:layout_alignStart="@+id/radio_rsvp"
+        android:id="@+id/textView2" />
+    <RadioGroup
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/radio_rsvp"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_weight="1"
+            android:id="@+id/Yes"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="May be"
+            android:id="@+id/Maybe"
+            android:checked="false" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No"
+            android:id="@+id/No"
+            />
+
+
+    </RadioGroup>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="Save"
+    android:id="@+id/button2" />
+</RelativeLayout>

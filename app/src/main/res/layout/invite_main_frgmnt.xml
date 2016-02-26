@@ -1,0 +1,82 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFAEBD7"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/invite_bkg"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/linlaymn">
+
+    <ImageButton
+        android:id="@+id/msg_img_btn"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/fb_img_btn"
+        android:layout_alignStart="@+id/gmail_img_btn"
+        android:layout_marginTop="130dp"
+        android:layout_weight="0.08"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/fb_img_btn"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/whatsapp_img_btn"
+        android:layout_alignParentStart="true"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/whatsapp_img_btn"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.07"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/fb_img_btn"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/gmail_img_btn"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08"
+        android:layout_below="@+id/msg_img_btn"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invite Friends..."
+        android:textSize="32dp"
+        android:textColor="#D81B60"
+        android:textStyle="italic|bold"
+        android:id="@+id/textView"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/msg_img_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="56dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invtatn_imgvu"
+        android:src="@drawable/invitatn"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+    </RelativeLayout>

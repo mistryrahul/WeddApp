@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:background="#99F0F8FF"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email Address"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:id="@+id/email_et"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Phone"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:id="@+id/phn_et"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:id="@+id/name_et"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Message"
+        android:textColorHint="#000000"
+        android:ems="10"
+        android:id="@+id/msg_et"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

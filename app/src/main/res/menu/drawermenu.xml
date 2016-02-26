@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="">
+        <menu>
+            <item
+                android:title="Home"
+                android:id="@+id/home_scrn"
+                android:icon="@drawable/home"/>
+            <item
+                android:title="Key People"
+                android:id="@+id/keyppl"
+                android:icon="@drawable/key_people"/>
+            <item
+                android:title="Pic Galary"
+                android:id="@+id/picgal"
+                android:icon="@drawable/pic_gal"/>
+        </menu>
+
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:title="Events"
+                android:id="@+id/evnts"
+                android:icon="@drawable/events"/>
+            <item
+                android:title="Invite"
+                android:id="@+id/invite"
+                android:icon="@drawable/invite"/>
+            <item
+                android:title="Wedding"
+                android:id="@+id/wedding"
+                android:icon="@drawable/view_wedding"/>
+            <item
+                android:title="Toast"
+                android:id="@+id/toast"
+                android:icon="@drawable/toast"/>
+            <item
+                android:title="Message"
+                android:id="@+id/message"
+                android:icon="@drawable/event_info"/>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Helpdesk"
+        android:id="@+id/hlpdsk"
+          android:icon="@drawable/help_desk"/>
+
+</menu>

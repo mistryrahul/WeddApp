@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WeddApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_id">685984281545926</string>
+    <string name="v2_api_key">AIzaSyAkKrKOkj9AsDh5dlTqCUShRFeu13knyww</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_nav">User_nav</string>
+    <string name="title_activity_wedding_home">Wedding_home</string>
+    <string name="Event_spinner_title">Event Name</string>
+    <string-array name="event_lst">
+        <item>--Select Event--</item>
+        <item>Mehandi</item>
+        <item>Sangeet</item>
+        <item>Wedding</item>
+        <item>Reception</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="rsvp_relation">
+        <item>--Select Event--</item>
+        <item>Brides Mother</item>
+        <item>Brides Father</item>
+        <item>Brides Brother</item>
+        <item>Brides Sister</item>
+        <item>Brides Cousin</item>
+        <item>Brides Uncle</item>
+        <item>Brides Aunty</item>
+        <item>Brides Guest</item>
+    </string-array>
+    <string name="title_activity_custom_photo_gallery">CustomPhotoGalleryActivity</string>
+
+</resources>

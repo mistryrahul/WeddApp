@@ -1,0 +1,405 @@
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="false"
+    android:id="@+id/scrlvu">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/evntMn"
+    android:background="#FCEBDD"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/g_map"
+        android:background="@color/com_facebook_blue"
+        android:layout_width="391dp"
+        android:layout_height="120dp"
+        android:layout_weight="15.50">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/mn">
+
+       <LinearLayout
+            android:layout_width="87dp"
+            android:layout_height="91dp"
+            android:orientation="vertical"
+            android:layout_weight="0.15"
+            android:background="@drawable/wed_box"
+           android:id="@+id/imgbox">
+           <TextView
+               android:paddingTop="8dp"
+               android:id="@+id/day_imgbox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="22dp"
+               android:textColor="#D81B60"
+               android:text="DEC16"
+               android:layout_gravity="center_horizontal"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingTop="9dp"
+               android:id="@+id/year_imgbox"
+               android:textSize="20dp"
+               android:textColor="#D81B60"
+               android:layout_gravity="center_horizontal"
+               android:text="2015"
+               />
+       </LinearLayout>
+        <LinearLayout
+            android:paddingBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.85"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/evntNm"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:text="EventName"
+                android:textStyle="bold|italic"
+                android:textColor="#E53935"
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/Venue"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textStyle="italic"
+                android:text="Venue Name"
+                android:textColor="#E53935"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+/////////////////////////////////////
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/dscrptn_linlay"
+
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/event_id"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/descriptn"
+                android:layout_weight="0.05"
+                android:id="@+id/fff" />
+            <TextView
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#E53935"
+                android:textSize="29dp"
+                android:id="@+id/dscrptn"
+                android:layout_weight="0.75"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="11dp"
+                android:src="@drawable/arrow_dwn"
+                android:layout_gravity="right"
+                android:layout_weight="0.05"
+                android:id="@+id/nnnn" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="343dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#E53935"
+            android:lines="4"
+            android:maxLines="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#6643"
+            android:id="@+id/dscrptn_txtvu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/VenueAddrs_linlay"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll2"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/venue_loc"
+                android:layout_weight="0.05"
+                android:id="@+id/fff2" />
+            <TextView
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#E53935"
+                android:textSize="29dp"
+                android:id="@+id/VnuAddrs"
+                android:layout_weight="0.75"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="1dp"
+                android:src="@drawable/arrow_dwn"
+                android:layout_gravity="right"
+                android:layout_weight="0.05"
+                android:id="@+id/nnnn2" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="343dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingLeft="10dp"
+            android:lines="4"
+            android:maxLines="10"
+            android:paddingRight="10dp"
+            android:background="#6643"
+            android:textColor="#E53935"
+            android:id="@+id/VnuAddrs_txtvu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/TravInfo_linlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll3"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/trav_info"
+                android:layout_weight="0.05"
+                android:id="@+id/fff3" />
+            <TextView
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Travel Info"
+                android:textColor="#E53935"
+                android:textSize="29dp"
+                android:id="@+id/TravInfo"
+                android:layout_weight="0.70"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_dwn"
+
+                android:layout_gravity="right"
+                android:layout_weight="0.07"
+                android:id="@+id/nnnn3" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="343dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textColor="#E53935"
+            android:lines="4"
+            android:maxLines="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#6643"
+            android:id="@+id/TravInfo_txtvu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/DrsCode_linlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll4"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/dress_cd"
+                android:layout_weight="0.05"
+                android:id="@+id/fff4" />
+            <TextView
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dress Code"
+                android:textColor="#E53935"
+                android:textSize="29dp"
+                android:id="@+id/DrsCode"
+                android:layout_weight="0.70"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_dwn"
+
+                android:layout_gravity="right"
+                android:layout_weight="0.07"
+                android:id="@+id/nnnn4" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="343dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:lines="4"
+            android:maxLines="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#6643"
+            android:text="lojj hkghjghjg gjhasjfghg  hajfjkafjkg gafgkgaskg gjgasfg agsfggggg ghsghg gghg"
+            android:textColor="#E53935"
+            android:id="@+id/DrsCode_txtvu"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Accomodatn_linlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll5"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:paddingLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/accomodation"
+                android:layout_weight="0.05"
+                android:id="@+id/fff5" />
+            <TextView
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accomodation"
+                android:textColor="#E53935"
+                android:textSize="29dp"
+                android:id="@+id/Accomodatn"
+                android:layout_weight="0.66"
+                />
+            <ImageView
+
+                android:layout_width="36dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_dwn"
+                android:paddingLeft="4dp"
+                android:layout_gravity="right"
+                android:id="@+id/nnnn5" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="343dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:lines="4"
+            android:maxLines="10"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#6643"
+            android:text="lojj hkghjghjg gjhasjfghg  hajfjkafjkg gafgkgaskg gjgasfg agsfggggg ghsghg gghg"
+            android:textColor="#E53935"
+            android:id="@+id/Accomodatn_txtvu"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit"
+        android:text="Edit This Event"
+        android:background="#A93E49"
+        android:layout_marginBottom="5dp"
+         />
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/Addtocalender"
+     android:text="Add to Calender"
+     android:background="#A93E49"
+     android:layout_marginBottom="5dp"
+     />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DeleteEvnt"
+        android:text="Delete Event"
+        android:background="#A93E49"
+                />
+
+
+
+</LinearLayout>
+</ScrollView>

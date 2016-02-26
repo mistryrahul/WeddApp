@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    >
+
+    <LinearLayout
+        android:layout_width="125dp"
+        android:layout_height="86dp"
+        android:orientation="vertical"
+        android:background="@drawable/wed_box"
+        android:id="@+id/linlay">
+        <TextView
+            android:paddingTop="8dp"
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textColor="#D81B60"
+            android:text="DEC16"
+            android:layout_gravity="center_horizontal"
+            />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingTop="9dp"
+           android:id="@+id/year"
+           android:textSize="22dp"
+           android:textColor="#D81B60"
+           android:layout_gravity="center_horizontal"
+           android:text="2015"
+           />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="26dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:id="@+id/evnt_nm"
+        android:background="@null"
+        android:text="Wedding"
+        android:textSize="29dp"
+        />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/evnt_loc"
+        android:text="Taj Exotica"
+        android:background="@null"
+        android:textSize="15dp"
+        android:layout_gravity="left"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:id="@+id/evnt_cd"
+
+            />
+
+</LinearLayout>
+
+
+    </LinearLayout>

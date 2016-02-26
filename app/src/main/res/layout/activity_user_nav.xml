@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wed_img">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/rel_lay_show_grp_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            >
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_lay_show_grp_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            >
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/downmenu"
+        android:visibility="visible">
+    </RelativeLayout>
+</RelativeLayout>

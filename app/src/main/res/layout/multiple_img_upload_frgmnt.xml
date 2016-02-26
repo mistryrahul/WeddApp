@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:id="@+id/miu">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/evntven"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/galnm"
+            android:inputType="text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="Galary Name:" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Galary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/opengal" />
+
+
+
+
+</LinearLayout>

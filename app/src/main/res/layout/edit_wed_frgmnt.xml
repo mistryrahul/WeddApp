@@ -1,0 +1,83 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:id="@+id/scvuedtwed"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linlayedtwed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rellayedtwed"
+            android:layout_width="match_parent"
+            android:layout_height="637dp"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="#FFE53935"
+            >
+
+
+            <ImageView
+                android:id="@+id/imageViewedtwed"
+                android:layout_width="225dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/wed_img"
+                android:layout_alignParentTop="true" />
+
+            <EditText
+                android:id="@+id/Etbrideedtwed"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="Bride Name"
+                android:inputType="text"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/Etgroomedtwed" />
+
+
+
+            <EditText
+                android:id="@+id/Etgroomedtwed"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:hint="Groom Name"
+                android:inputType="text"
+                android:layout_above="@+id/ETStoryedtwed"
+                android:layout_centerHorizontal="true" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#00000000"
+                android:hint="Story"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:scrollbars="vertical"
+                android:id="@+id/ETStoryedtwed"
+                android:layout_above="@+id/buttonedtwed"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/buttonedtwed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="UPDATE WEDDING INFO" />
+
+        </RelativeLayout>
+
+   </LinearLayout>
+</ScrollView>

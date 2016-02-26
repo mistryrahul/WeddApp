@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCDD2"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/linelay">
+
+    <ImageView
+
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgvu"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:layout_weight="0.51" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvunm"
+        android:textColorHint="#E91E63"
+        android:hint="Name"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:id="@+id/txtvuemail"
+        android:textColorHint="#E91E63"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvuphn"
+        android:hint="Enter Phone No"
+        android:textColorHint="#E91E63"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        >
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textColor="#E91E63"
+                android:id="@+id/rbtnMale"
+                android:layout_weight="0.50" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#E91E63"
+                android:id="@+id/rbtnFemale"
+                android:layout_weight="0.50" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llbtns"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        >
+
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:id="@+id/btnsave"
+            android:layout_weight="0.5"
+            android:layout_gravity="center" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:text="LOGOUT"
+            android:id="@+id/btnNext"
+            android:layout_weight="0.5"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
